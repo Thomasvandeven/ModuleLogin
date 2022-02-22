@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>You first Spring application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<form action="/add" method="POST">
+    <p>Let's add a customer.</p>
+
+  <div>
+    <label for="firstName">First name:</label>
+    <input name="first" id="firstName" value=" ">
+  </div>
+  <div>
+    <label for="lastName">Last name:</label>
+    <input name="last" id="lastName" value=" ">
+  </div>
+  <div>
+    <label for="adresName">Street:</label>
+    <input name="adres" id="adresName" value=" ">
+  </div>
+
+      <div>
+          <label for="nr">Number:</label>
+          <input name="nr" id="nr" value=" ">
+      </div>
+
+  <div>
+    <label for="cityName">City name:</label>
+    <input name="city" id="cityName" value=" ">
+  </div>
+      <div>
+          <label for="postalCode">ZIP/ Postcode:</label>
+          <input name="code" id="postalCode" value=" ">
+      </div>
+
+    <hr 100%>
+    <br><br>
+  <br>
+    <button>Add customer</button>
+
+</form>
+  <br><p>List all customers: </p> <br>
+
+  <form action="/list" method="GET">
+      <button>List customers</button>
+  </form>
+  <hr>
+  <br><p>Search in customer Database: </p> <br>
+
+
+  <form action="/find" method="GET">
+      <button>Find by order</button>
+  </form>
+
+  <form action="/findname" method="GET">
+      <button>Find by First name</button>
+  </form>
+
+  <form action="/findfamilyname" method="GET">
+      <button>Find by family name</button>
+  </form>
+  <form action="/find2" method="GET">
+      <button>Find by housenumber</button>
+  </form>
+</body> <hr>
+</html>
